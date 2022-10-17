@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Muestra "Buenos dí­as" si la hora es inferior a las
+18:00h</p>
+<p id="buenas">Saludo</p>
+<script>
+var hour = new Date().getHours();
+var saludo;
+if (hour < 12) {
+    saludo = "Buenos dí­as";
+} else if (hour >=12 && <18) {
+    // Acción entre las 12h (incluido) y las 18h (no incluido)
+    saludo = "Buenas tardes"
+} else {
+    saludo = "Buenas noches";
+}
+document.getElementById("buenas").innerHTML =
+saludo;
+</script>
+</body>
+</html>

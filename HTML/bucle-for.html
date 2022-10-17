@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Haz clic en el botón y se mostraran los titulares del 1 al 6</p>
+<button onclick="myFunction()">Prueba</button>
+<div id="demo"></div>
+<script>
+function myFunction() {
+var x ="", i;
+// for (i=1; i<=6; i++) { Todos los titulares des del <h1> al <h6>
+// for (i=2; i<=4; i++) { Titulares del <h2> al <h4>
+for (i=3; i>=1; i--) { // Titulares del <h3> al <h1>
+x = x + "<h" + i + ">Titular " + i + "</h" + i + ">";
+}
+document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>
